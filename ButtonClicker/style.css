@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Cantarell', sans-serif;
+    margin: 0 10%;
+}
+
+button{
+    font-family: 'Cantarell', sans-serif;
+    border: solid black 2px;
+    box-shadow: 2px 2px black;
+}
+
+.navBar{
+    height: 50px;
+    padding: 0 1rem;
+    background-color: lightgrey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#login{
+    height: 20px;
+    width: auto;
+    padding: 0 5px;
+    padding-bottom: 20px;
+    color: white;
+    background: cornflowerblue;
+    box-shadow: 2px 2px black;
+    border: solid black 2px;
+
+}
+
+input{
+    border: solid black 2px;
+}
+
+.container{
+    height: fit-content;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.col1{
+    height: 350px;
+    flex: 2;
+    display: flex;
+    flex-flow: column;
+}
+
+.definitions{
+    flex: 1;
+    width: 99%;
+    margin-top: 15px;
+    border: solid black 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.word{
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.likes{
+    width: 70px;
+    margin-top: 20px;
+    background: goldenrod;
+}
+
+.define{
+    flex: 3;
+}
+
+.col2{
+    height: 250px;
+    flex: 1;
+}
+
+.youDef{
+    height: 120px;
+    width: 89%;
+    margin-top: 15px;
+    padding: 8px;
+    border: solid black 3px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+}
+
+#addDef{
+    height: 30px;
+    width: 180px;
+    font-weight: bolder;
+    background: lightgreen;
+}
