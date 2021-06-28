@@ -20,12 +20,19 @@
 // console.log(p4)
 
 
-function randomPizza(crust) {
-    var pizza = {}
-    pizza.crust = ["deep dish", "thin crust", "hand tossed", "stuffed crust", "deep dish", "thin crust", "hand tossed", "stuffed crust", "deep dish", "thin crust"];
-    // pizza.sauce = ["marinara", "alfredo", "pesto", "traditional"];
-    // pizza.cheese = ["mozzarella", "asiago", "feta"];
-    // pizza.toppings = ["pepperoni", "sausage", "mushrooms", "olives", "onions", "honey drizzle"];
+    var pizzaR = {
+        crust: ["deep dish", "thin crust", "hand tossed", "stuffed crust"];
+        sauce: ["marinara", "alfredo", "pesto", "traditional"];
+        cheese: ["mozzarella", "asiago", "feta"];
+        toppings: ["pepperoni", "sausage", "mushrooms", "olives", "onions", "honey drizzle"];
+
+        randomPizza function() {
+            console.log(this.crust[Math.floor(Math.random() * 4)])
+        }
+
+    }
+
+   
     return pizza;
     // return obj[pizza[pizza.length * Math.random() << 0]];
 }
