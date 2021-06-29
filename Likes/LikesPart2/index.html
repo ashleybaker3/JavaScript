@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Likes Part 2</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 id = "navBar">Network</h1>
+    <h1 id="yourFeed">Your Feed</h1>
+    <div id="feed">
+        <div id="col1">
+            <img src="./images/Lae'zel.jpg" alt="profile picture">
+            <a href="https://placekitten.com/g/200/300" id="addAvatar">Add an avatar</a>
+            <h2>Lae'zel</h2>
+        </div>
+        <div id="col2">
+            <div class="container">
+                <div class ="row">
+                    <h2>Neil N</h2>
+                    <p class="likeUp" id="neilUp">0 Likes</p>
+                    <button class="like" onclick="addLike(0)">Like</button>
+                </div>
+                    <p class="status">I just set up this new discord bot, let me know what you think. <a href="https://placekitten.com/200/300">link</a> </p>
+            </div>
+            <div class="container">
+                <div class ="row">
+                    <h2>Nichole K</h2>
+                    <p class="likeUp" id="nicholeUp">0 Likes</p>
+                    <button class="like" onclick="addLike(1)">Like</button>
+                </div>
+                    <p class="status">Just finished my <a href="https://placekitten.com/200/300">next comic</a>, check it out. </p>
+            </div>
+            <div class="container">
+                <div class ="row">
+                    <h2>Jim R</h2>
+                    <p class="likeUp" id="jimUp">0 Likes</p>
+                    <button class="like" onclick="addLike(2)">Like</button>
+                </div>
+                    <p class="status">I can't stop listening to the <a href="https://www.youtube.com/watch?v=KJ5UazhKXC8">new album</a>. Who else is liking it?</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
