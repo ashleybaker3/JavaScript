@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Signika:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="navBar">
+        <h1>Dojo Weather</h1>
+        <div id="cities">
+            <h3 onclick="alert('Loading weather report...')">Burbank</h3>
+            <h3 onclick="alert('Loading weather report...')">Chicago</h3>
+            <h3 onclick="alert('Loading weather report...')">Dallas</h3>
+        </div>
+    </div>
+    <main>
+        <div id="header">
+            <h2>San Jose</h2>
+            <div id="tempIn">
+                <label>show temperature in</label>
+                <select name="temp">
+                    <option value="celsius">&deg;C</option>
+                    <option value="fahrenheit">&deg;F</option>
+                </select>
+            </div>
+        </div>
+        <div id="forecast">
+            <div class="weather">
+                <h3 class="day">Today</h3>
+                <img src="./assets/assets/some_rain.png" alt="some rain" class="image">
+                <p class="weatherDetails">some rain</p>
+                <div class="extremes">
+                    <h3 id="todayH" class="high">24&deg;</h3>
+                    <h3 id="todayL" class="low">18&deg;</h3>
+                </div>
+            </div>
+            <div class="weather">
+                <h3 class="day">Tomorrow</h3>
+                <img src="./assets/assets/some_sun.png" alt="some sun" class="image">
+                <p class="weatherDetails">some sun</p>
+                <div class="extremes">
+                    <h3 id="tomorrowH" class="high">27&deg;</h3>
+                    <h3 id="tomorrowL" class="low">19&deg;</h3>
+                </div>
+            </div><div class="weather">
+                <h3 class="day">Friday</h3>
+                <img src="./assets/assets/some_clouds.png" alt="some clouds" class="image">
+                <p class="weatherDetails">some clouds</p>
+                <div class="extremes">
+                    <h3 id="fridayH" class="high">21&deg;</h3>
+                    <h3 id="fridayL" class="low">16&deg;</h3>
+                </div>
+            </div><div class="weather">
+                <h3 class="day">Saturday</h3>
+                <img src="./assets/assets/some_sun.png" alt="some sun" class="image">
+                <p class="weatherDetails">some sun</p>
+                <div class="extremes">
+                    <h3 id="saturdayH" class="high">26&deg;</h3>
+                    <h3 id="saturdayL" class="low">21&deg;</h3>
+                </div>
+            </div>
+        </div>
+        <div id="cookies">
+            <img src="./assets/assets/cookie.png" alt="cookie">
+            <div id="cookieTime">
+                <h4 id="stop">Stop! Cookie Time</h4>
+                <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <a href="https://placekitten.com/g/200/300">Read more...</a> </p>
+            </div>
+            <button id="accept" onclick="hide()">I accept</button>
+        </div>
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
